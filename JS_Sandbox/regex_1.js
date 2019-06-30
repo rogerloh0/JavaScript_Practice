@@ -32,34 +32,3 @@ console.log(result)
 const str = 'Hello There';
 const newStr = str.replace(re, 'hi');
 console.log(newStr);
-
-// Part 2
-let re;
-// Literal characters
-re = /hello/;
-// Metacharater Symbols
-re = /^h/; // Must start with "h" (can use case insensetive)
-re = /d$/; // Must end with "d"
-re = /^Hello$/; // Must begin and end with
-re = /^H.llo$/; // Match any ONE character
-re = /^H*llo$/; // Match any character 0 or more times
-re = /gre?a?y/; // Optional charater 
-re = /gre?a?y\?/; // Escape charater 
-
-
-// String to mach
-const str
-
-// String to match
-const str = 'Hello World';
-// Log result
-const result = re.exec(str);
-console.log(result);
-
-function reTest(re, str){
-  if(re.test(str)){
-    console.log(`${str} matches ${re.source}`);
-  } else{
-    console.log(`${str} does NOT matchj ${re.source}`);
-  }
-}
