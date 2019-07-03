@@ -34,9 +34,13 @@ const SuperMembership = function(name){
   this.cost = '$25';
 }
 
-const member = [];
+const members = [];
 const factory = new MemberFactory();
 
-member.push(factory.createMember('John Doe', 'simple'))
+members.push(factory.createMember('John Doe', 'simple'))
 
 console.log(member);
+
+members.forEach(function(member){
+  member.define();
+});
