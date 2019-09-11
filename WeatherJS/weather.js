@@ -1,6 +1,6 @@
 class Weather{
   constructor(city, country, unit){
-    this.apiKey = '#'; // Obtain on OpenWeatherAPI
+    this.apiKey = '943a270cfbaedd87fcc87f8591c37d65'; // Obtain on OpenWeatherAPI
     this.city = city;
     this.country = country;
     this.unit = unit;
